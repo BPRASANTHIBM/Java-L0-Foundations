@@ -1,0 +1,29 @@
+package com.arrayList;
+
+import java.util.ArrayList;
+
+public class arraylist {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+ArrayList <Object>list = new ArrayList<Object>();
+list.add(10);
+list.add(12.34);
+list.add("java");
+list.add(10);
+System.out.println(list);
+System.out.println(list.get(0));
+list.remove(1);
+//System.out.println(list.remove(1));
+System.out.println(list);
+System.out.println(list.size());
+
+list.set(0, "hello");
+System.out.println(list);
+
+
+
+
+	}
+
+}

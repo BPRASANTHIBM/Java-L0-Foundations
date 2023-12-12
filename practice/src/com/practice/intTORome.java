@@ -1,0 +1,50 @@
+package com.practice;
+
+import java.util.Scanner;
+import java.util.*;
+
+public class intTORome {
+
+
+		public static void main (String args[]) {
+			int arr[] = {1000,900,500,400,100,90,50,40,10,9,5,4,1}; 
+		String arr1[] = {"M","CM","D","CD","C","XC","L","XL","X","XI","V","IV","I"};
+		Map<Integer, String>map= new HashMap<>();
+		map.put(1000, "M");
+		map.put(900, "CM");
+		map.put(500, "D");
+		map.put(400, "CD");
+		map.put(100, "C");
+		map.put(90, "XC");
+		map.put(50, "L");
+		map.put(40, "XL");
+		map.put(10, "X");
+		map.put(9, "XI");
+		map.put(5, "V");
+		map.put(4, "IV");
+		map.put(1, "I");
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the conversion Integer value 1-3999");
+		int n = sc.nextInt();
+
+		String sum = "";
+		try {
+			for (int i = 0; i <arr.length; i++) {
+				while (n >= arr[i]) {
+					sum = sum + map.get(arr[i]);
+					n = n - arr[i];
+				}
+			                                                                       	
+			} 
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}
+		System.out.println(sum);
+//		System.out.println(map.get("M"));
+		System.out.println(map);
+		}
+	}
+
+

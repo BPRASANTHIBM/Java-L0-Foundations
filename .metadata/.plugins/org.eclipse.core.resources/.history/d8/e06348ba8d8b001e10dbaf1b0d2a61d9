@@ -1,0 +1,117 @@
+package com.bookMyShow;
+
+import java.util.*;
+
+public class BookMyShow {
+	
+	static Scanner sc = new Scanner(System.in);
+	static int bookingId ;
+
+	public static void main(String[] args) {
+	
+		
+		System.out.println("***************Book My Show Application****************");
+		
+		System.out.println("Enter your choice for Booking ???");
+		
+		System.out.println("1.Add Ticket Booking\n2.Update Tickets\n3.Delete Tickets\n4.Check Availabiliy\n5.Quit      ");
+		
+		
+		
+		
+		
+	   // Queue<String> q = new PriorityQueue<String>();
+		
+		
+	         int arr[] = new int[25];// store values
+		
+	     Map<Integer,String>	m = new HashMap<>(); // Search the person
+	     
+	     
+	     int c = sc.nextInt();
+	     
+	     switch (c) {
+		case 1:
+			
+		 Integer d  = AddTicket(arr,m);
+		 
+		 boolean Result = d.equals(1);  
+		 
+		 
+		 if(Result) {
+			 
+			
+			 System.out.println("**************Your Tiket Succesfully Booked****************");
+			 
+			 System.out.println("_________Come Back To Sathiyam Cinimas, Enjoy your snacks__________");
+		 }
+		 
+		 else {
+			 System.out.println("*****The Tickets are Booked,Let me Try Again Later*******");
+		 }
+			
+			
+			break;
+
+		default:
+			break;
+		}
+	     
+		}
+
+	public static int AddTicket(int arr1[], Map<Integer, String> m) {
+		
+		
+		System.out.println("Enter the how many tickets you want to book???");
+		
+		int n = sc.nextInt(); // get value the ticket to user
+		
+		
+		
+		
+		
+		for(int i = 1; i<n ;i++) {
+			
+			int add = arr1[i]; // Store the values
+			
+		}
+		
+		
+		for(int i = 0; i<=n ;i++) {
+			
+			System.out.println("enter the persons name ???");
+	         
+			String s = sc.next();
+		  
+			m.put(arr1[i], s);
+			
+			
+			
+		}
+		
+		
+		 System.out.println("******Your Booked Tickets Details Are Below**********");
+		
+           for(int i= 0; i<n ;i++) {
+			
+			
+	         
+			 bookingId++;
+		  
+			 
+			 
+			 
+			 System.out.println(i+"   "+m.get(i)+"    " +"BookingCode  : 111"+bookingId );
+			
+		}
+           
+           System.out.println("\n Available Seats are : "+(25-n));
+           
+          
+	
+		return 1;
+	
+		
+	}
+
+}

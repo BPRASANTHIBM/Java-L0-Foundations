@@ -1,0 +1,25 @@
+package com.stack;
+
+import java.util.Stack;
+
+public class ReverseStsck {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// TODO Auto-generated method stub
+				Stack<Integer> stack = new Stack<Integer>();
+				Stack<Integer> stack1 = new Stack<Integer>();
+				stack.push(23);
+				stack.push(46);
+				stack.push(1);
+				stack.push(2);
+				System.out.println(stack.elementAt(0));
+				System.out.println(stack);
+
+				while(!stack.isEmpty()) {
+					stack1.push(stack.peek());
+					stack.pop();
+				}System.out.println(stack1);
+	}
+
+}

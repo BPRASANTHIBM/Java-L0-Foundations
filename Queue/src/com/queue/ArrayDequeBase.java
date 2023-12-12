@@ -1,0 +1,45 @@
+package com.queue;
+
+import java.util.ArrayDeque;
+import java.util.Deque;
+
+public class ArrayDequeBase {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Deque<Integer> queue = new ArrayDeque<Integer>();
+
+queue.offer(5);
+queue.offer(2);
+queue.offer(1);
+queue.offer(5);
+queue.add(3);
+queue.add(7);
+
+
+System.out.println(queue);
+queue.offerFirst(5);
+queue.offerLast(3);
+System.out.println(queue);
+System.out.println("-----------------------------------");
+queue.pollFirst();
+queue.pollLast();
+System.out.println(queue);
+System.out.println("********************************************");
+for (int i = 0; i < queue.size(); i++) {
+	System.out.println(queue.getFirst());
+//	
+queue.poll();
+}
+System.out.println("*******************************************");
+System.out.println(queue.peekFirst());
+System.out.println(queue.peekLast());
+System.out.println(queue.pop());
+queue.push(9);
+System.out.println(queue);
+
+System.out.println(queue.getFirst());
+System.out.println(queue.getLast());
+	}
+
+}

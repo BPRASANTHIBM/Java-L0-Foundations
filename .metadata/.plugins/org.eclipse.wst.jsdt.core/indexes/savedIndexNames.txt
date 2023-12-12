@@ -1,0 +1,8 @@
+INDEX VERSION 1.4+D:\Java Programs Practice - Relevantz\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+3214961762.index
+2450774421.index
+2948145618.index
+3457271305.index
+2769505090.index
+161529884.index
+2367106126.index

@@ -1,0 +1,54 @@
+package com.day1;
+
+class check {
+	int a = 6; // class variable
+	static int b = 6;
+	
+	public int show () {
+		int a = 5;
+		System.out.println(a);
+		return a;
+	}
+	
+}
+class valid extends check{
+	
+   public void showed() {
+	   System.out.println(show());//5
+	   System.out.println(super.a=7);//6
+	   System.out.println(a);
+	   
+   }
+	
+}
+
+
+
+
+
+
+
+public class Rough {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	 String a = "HelloWord";
+	 String b = "Hello";
+	 
+	 System.out.println(a.equals(b));
+	 System.out.println(a==b);
+	 System.out.println("***************************************************");
+	 String c = "Hello";
+	 String d ="Word";
+	 
+	 System.out.println((b + d).equals(a));
+	 
+	 System.out.println("__________________________________________________");
+	 valid v = new valid ();
+	
+	 v.showed();
+		
+	}
+
+}

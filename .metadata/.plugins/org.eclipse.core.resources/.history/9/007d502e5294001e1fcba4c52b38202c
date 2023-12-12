@@ -1,0 +1,123 @@
+package com.task2;
+
+//Create three interfaces, each with two methods. Inherit a new interface from the three,
+//adding a new method. Create a class by implementing the new interface and also
+//inheriting from a concrete class. Now write four methods, each of which takes one of the
+//four interfaces as an argument. In main ( ), create an object of your class and pass it to
+//each of the methods.
+interface KingFisher{
+	public void FlightServices ();
+	public void FlightName ();
+	
+	
+	
+	
+		
+}
+
+interface Indigo{
+	public void FlightServices ();
+	public void FlightName ();
+	
+}
+
+interface Emirates{
+	public void FlightServices ();
+	public void FlightName ();
+	
+	
+	
+}
+
+interface AirCrafts extends KingFisher,Emirates,Indigo{
+	
+	
+	public void Flight();
+	
+	
+	
+}
+
+class Concreteclass{
+	void display() {
+		System.out.println("It is Concrete Class");
+	}
+}
+
+
+class Myclass extends Concreteclass implements AirCrafts{
+
+	@Override
+	public void FlightServices() {
+	    System.out.println("FlightServices calles.....");
+		
+	}
+
+	@Override
+	public void FlightName() {
+		System.out.println("Flight Name Calles....");
+		
+	}
+
+	@Override
+	public void Flight() {
+		System.out.println("Flight Calles....");
+	}
+	
+	
+}
+
+
+class main {
+	
+
+	void MethodOne (KingFisher A) {
+		
+		A.FlightName();
+	}
+	
+
+	 void MethodTwo (Indigo B) {
+		
+		B.FlightServices();
+	}
+	
+ void MethodThree (Emirates C) {
+		
+		C.FlightName();
+	}
+ void MethodFour (AirCrafts D) {
+	
+	D.Flight();
+}
+	
+	
+}
+
+
+
+
+public class InterfaseTask  {
+
+	
+
+	
+	public static void main(String[] args) {
+		
+		
+		
+		Myclass m= new Myclass();
+		
+		main m1 = new main();
+		
+		m1.MethodOne(m);
+		m1.MethodTwo(m);
+	    m1.MethodThree(m);
+	    m1.MethodFour(m);
+		
+		
+		
+
+	}
+
+}

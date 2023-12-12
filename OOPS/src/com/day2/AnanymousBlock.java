@@ -1,0 +1,41 @@
+package com.day2;
+
+public class AnanymousBlock {
+// Types of Blocks
+	
+// 1. Blocks with Name 
+//	a.Method 
+//	b.Costructor
+	
+// 2.Blocks Without Name 
+//	a. Static Block
+//	b. Instance Block
+	
+
+// Ananymous Block --- Execute when I'm creating Object
+	
+	{
+		System.out.println("Instance Block");
+	}
+	
+	AnanymousBlock(){
+//		super();
+		System.out.println("the");
+	}
+	
+// Static Block ----- before main method excecute
+	static {
+		System.out.println("Static Blocks"); //1
+	}
+	
+	public static void main(String[] args) {
+		
+		
+		System.out.println("Main Method"); //2
+		
+		AnanymousBlock ab = new AnanymousBlock(); 
+		
+		
+	}
+
+}

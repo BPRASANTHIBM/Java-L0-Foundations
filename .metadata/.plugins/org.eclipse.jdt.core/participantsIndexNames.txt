@@ -1,0 +1,5 @@
+INDEX VERSION 1.134
+D:\Java Programs Practice - Relevantz\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2367106126.index
+\simple\src\main\resources
+D:\Java Programs Practice - Relevantz\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3788281315.index
+\app1\src\main\java
